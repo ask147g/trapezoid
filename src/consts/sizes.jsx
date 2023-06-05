@@ -1,5 +1,5 @@
 import * as equation from "./random"
-
+// размеры трапеции
 export const topSide = equation.TopSide();
 
 export const bottomRightSide = equation.BottomRightSide(topSide);
@@ -13,4 +13,3 @@ export const rightHypotenuse = equation.RightHypotenuse(topSide, bottomRightSide
 export const leftHypotenuse = equation.LeftHypotenuse(bottomLeftSide, height);
 
 export const area = equation.Area(topSide, bottomLeftSide+bottomRightSide, height);
-console.log(area)
